@@ -1,52 +1,66 @@
 .hero {
-  text-align: center;
-  padding: 100px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 60px 80px;
+
+  background-color: #f6f7fb;
 }
 
-.hero h1 {
-  font-size: 3rem;
-  color: #333;
-  margin-bottom: 20px;
+.hero-left {
+  width: 50%;
 }
 
-.hero h2 {
-  font-size: 1.2rem;
-  color: #666;
-  max-width: 700px;
-  margin: auto;
-  font-weight: normal;
+.hero-left h1 {
+  font-size: 52px;
+  color: #111827;
+  line-height: 1.2;
 }
+
+.hero-left span {
+  color: #4f46e5;
+}
+
+.hero-left p {
+  margin-top: 20px;
+  color: #6b7280;
+  font-size: 18px;
+  max-width: 550px;
+}
+
 .hero-buttons {
   margin-top: 30px;
   display: flex;
-  justify-content: center;
   gap: 15px;
 }
 
+.hero-buttons button:first-child {
+  background: #4f46e5;
+  color: white;
+}
+
+.hero-buttons button:last-child {
+  background: white;
+  color: #4f46e5;
+  border: 2px solid #4f46e5;
+}
+
 .hero-buttons button {
-  padding: 12px 25px;
-  border: none;
-  border-radius: 8px;
+  padding: 14px 24px;
+  border-radius: 10px;
+  cursor: pointer;
   font-size: 16px;
   font-weight: 600;
-  cursor: pointer;
-  transition: 0.3s;
-}
-.hero-buttons button:first-child {
-  background-color: #ff6b35;
-  color: white;
 }
 
-.hero-buttons button:first-child:hover {
-  background-color: #e85d2c;
-}
-.hero-buttons button:last-child {
-  background-color: white;
-  color: #ff6b35;
-  border: 2px solid #ff6b35;
+.hero-right {
+  width: 45%;
+  display: flex;
+  justify-content: center;
 }
 
-.hero-buttons button:last-child:hover {
-  background-color: #ff6b35;
-  color: white;
+.hero-right img {
+  width: 100%;
+  max-width: 500px;
 }
