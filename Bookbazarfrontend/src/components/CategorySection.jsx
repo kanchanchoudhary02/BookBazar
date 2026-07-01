@@ -1,33 +1,61 @@
 import React from "react";
-import Category from "../data/Category";
 import "./CategorySection.css";
+import { Link } from "react-router-dom";
+import { FaArrowRight } from "react-icons/fa";
+import categories from "../data/categories";
 
 function CategorySection() {
   return (
-    <section className="category-section">
+    <section className="categories-wrapper">
+      <div className="categories">
 
-      <div className="section-header">
-        <h2>Shop by Category</h2>
-      </div>
+        {/* Section Title */}
+        <div className="section-title">
+          <span className="section-tag">✦ Explore</span>
+          <h2>Browse <span>Categories</span></h2>
+          <p>Everything you need for your studies — in one place.</p>
+        </div>
 
-      <div className="category-container">
+        {/* Grid */}
+        <div className="category-grid">
+          {categories.map((item, index) => (
+            <Link to={item.link} key={index} className="category-link">
+              <div
+                className="category-card"
+                style={{ "--glow": item.glow, "--lightBg": item.lightBg }}
+              >
 
-        {Category.map((category) => (
-          <div className="category-card" key={category.id}>
+                {/* Icon */}
+                <div
+                  className="category-icon"
+                  style={{ background: item.lightBg }}
+                >
+                  <span
+                    className="icon-inner"
+                    style={{ background: item.gradient }}
+                  >
+                    {item.icon}
+                  </span>
+                </div>
 
-            <div className="category-icon">
-              {category.icon}
-            </div>
+                {/* Text */}
+                <div className="category-text">
+                  <h3>{item.title}</h3>
+                  <p>{item.desc}</p>
+                </div>
 
-            <div className="category-content">
-              <h3>{category.title}</h3>
-              <p>{category.description}</p>
+                {/* Arrow */}
+                <div
+                  className="category-arrow"
+                  style={{ background: item.lightBg, color: "inherit" }}
+                >
+                  <FaArrowRight />
+                </div>
 
-              <span>{category.items}</span>
-            </div>
-
-          </div>
-        ))}
+              </div>
+            </Link>
+          ))}
+        </div>
 
       </div>
     </section>

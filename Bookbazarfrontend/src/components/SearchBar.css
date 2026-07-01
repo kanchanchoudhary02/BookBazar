@@ -1,0 +1,43 @@
+.search-container{
+
+    width:90%;
+
+    margin:40px auto 25px;
+
+    display:flex;
+
+}
+
+.search-container input{
+
+    flex:1;
+
+    padding:16px;
+
+    border:1px solid #ddd;
+
+    border-radius:10px 0 0 10px;
+
+    font-size:16px;
+
+    outline:none;
+
+}
+
+.search-container button{
+
+    width:160px;
+
+    border:none;
+
+    background:#4F46E5;
+
+    color:white;
+
+    font-size:16px;
+
+    cursor:pointer;
+
+    border-radius:0 10px 10px 0;
+
+}

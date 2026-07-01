@@ -1,59 +1,57 @@
 const books = [
   {
     id: 1,
-    title: "Java Programming",
-    author: "James Gosling",
-    price: 250,
-    condition: "Good"
+    title: "Data Structures and Algorithms",
+    author: "Narasimha Karumanchi",
+    price: 499,
+    condition: "Like New",
+    image: "https://images-na.ssl-images-amazon.com/images/I/81xQA4w7JML.jpg",
+    description: "Best book for learning DSA."
   },
   {
     id: 2,
-    title: "Data Structures and Algorithms",
-    author: "Mark Allen Weiss",
-    price: 350,
-    condition: "Like New"
+    title: "Java Programming",
+    author: "Herbert Schildt",
+    price: 650,
+    condition: "Good",
+    image: "https://images-na.ssl-images-amazon.com/images/I/71M+8tK4jFL.jpg",
+    description: "Complete reference for Java."
   },
   {
     id: 3,
-    title: "Operating System Concepts",
-    author: "Abraham Silberschatz",
-    price: 400,
-    condition: "Excellent"
+    title: "Python Crash Course",
+    author: "Eric Matthes",
+    price: 799,
+    condition: "Excellent",
+    image: "https://images-na.ssl-images-amazon.com/images/I/81HqVRRwp3L.jpg",
+    description: "Learn Python from scratch."
   },
   {
     id: 4,
-    title: "Computer Networks",
-    author: "Andrew S. Tanenbaum",
-    price: 300,
-    condition: "Good"
+    title: "Operating System Concepts",
+    author: "Abraham Silberschatz",
+    price: 550,
+    condition: "Fair",
+    image: "https://images-na.ssl-images-amazon.com/images/I/91L7j0A0v8L.jpg",
+    description: "Popular OS textbook."
   },
   {
     id: 5,
-    title: "Database Management System",
-    author: "Korth",
-    price: 280,
-    condition: "Fair"
+    title: "Computer Networks",
+    author: "Andrew S. Tanenbaum",
+    price: 720,
+    condition: "Like New",
+    image: "https://images-na.ssl-images-amazon.com/images/I/81R6JuVQwKL.jpg",
+    description: "Networking concepts explained."
   },
   {
     id: 6,
-    title: "Software Engineering",
-    author: "Ian Sommerville",
-    price: 320,
-    condition: "Like New"
-  },
-  {
-    id: 7,
-    title: "Python Crash Course",
-    author: "Eric Matthes",
-    price: 450,
-    condition: "Excellent"
-  },
-  {
-    id: 8,
-    title: "C Programming",
-    author: "Dennis Ritchie",
-    price: 200,
-    condition: "Good"
+    title: "Clean Code",
+    author: "Robert C. Martin",
+    price: 899,
+    condition: "New",
+    image: "https://images-na.ssl-images-amazon.com/images/I/41SH-SvWPxL.jpg",
+    description: "Guide to writing clean and maintainable code."
   }
 ];
 

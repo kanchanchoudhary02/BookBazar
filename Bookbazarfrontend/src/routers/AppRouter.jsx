@@ -12,12 +12,14 @@ function AppRouter() {
   return (
     <BrowserRouter>
       <Routes>
+
         <Route path="/" element={<Home />} />
         <Route path="/marketplace" element={<Marketplace />} />
         <Route path="/books" element={<Books />} />
         <Route path="/notes" element={<Notes />} />
         <Route path="/pyqs" element={<PYQs />} />
         <Route path="/sell" element={<Sell />} />
+        <Route path="/marketplace" element={<Marketplace />} />
       </Routes>
     </BrowserRouter>
   );

@@ -1,9 +1,10 @@
-import React from 'react';
-import Hero from '../components/Hero';
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
-import CategorySection from '../components/CategorySection';
-import FeaturedBooks from '../components/FeaturedBooks';
+import Navbar from "../components/Navbar";
+import Hero from "../components/Hero";
+import CategorySection from "../components/CategorySection";
+import FeaturedBooks from "../components/FeaturedBooks";
+import WhyChooseUs from "../components/WhyChooseUs";
+;
+import Footer from "../components/Footer";
 
 function Home() {
   return (
@@ -12,6 +13,8 @@ function Home() {
       <Hero />
       <CategorySection />
       <FeaturedBooks />
+      <WhyChooseUs />
+     
       <Footer />
     </>
   );
