@@ -1,0 +1,47 @@
+.featured{
+
+    padding:60px 80px;
+
+}
+
+.featured-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:35px;
+
+}
+
+.featured-header h2{
+
+    font-size:34px;
+
+}
+
+.featured-header button{
+
+    border:none;
+
+    background:none;
+
+    color:#4f46e5;
+
+    font-size:17px;
+
+    cursor:pointer;
+
+}
+
+.featured-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:25px;
+
+}
