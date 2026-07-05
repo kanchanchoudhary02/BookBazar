@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Navbar.css";
+// import sell from "../pages/Sell";
 import { Link, NavLink } from "react-router-dom";
 import { FaSearch, FaShoppingCart, FaUser, FaBookOpen } from "react-icons/fa";
 

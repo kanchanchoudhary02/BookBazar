@@ -1,0 +1,17 @@
+# Backend
+Bookbazarbackend/node_modules/
+Bookbazarbackend/.env
+
+# Frontend
+Bookbazarfrontend/node_modules/
+Bookbazarfrontend/.env
+
+# Logs
+*.log
+
+# VS Code
+.vscode/
+
+# Build
+build/
+dist/
