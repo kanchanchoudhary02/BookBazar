@@ -20,7 +20,7 @@ function Notes() {
     return Array.from({ length: 5 }, (_, i) => (
       <FaStar
         key={i}
-        className={i < Math.floor(rating) ? 'star filled' : 'star empty'}
+        className={i <Math.floor(rating) ? 'star filled' : 'star empty'}
       />
     ));
   };
