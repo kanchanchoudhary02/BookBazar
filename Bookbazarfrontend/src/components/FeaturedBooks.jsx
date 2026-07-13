@@ -3,9 +3,21 @@ import "./FeaturedBooks.css";
 import { FaHeart, FaStar, FaShoppingCart, FaArrowRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import books from "../data/books";
+import { useAuth } from '../context/authcontext';
 
 function FeaturedBooks() {
   const [liked, setLiked] = useState([]);
+  const { addToCart, token } = useAuth();
+  const handleBuy = async (book) => {
+  if (!token) {
+    alert('Pehle login karo!');
+    return;
+  }
+  const res = await addToCart(book);
+  if (res.success) {
+    alert('Cart mein add ho gaya! 🛒');
+  }
+};
 
   const toggleLike = (id) => {
     setLiked((prev) =>
@@ -79,10 +91,10 @@ function FeaturedBooks() {
                 </div>
 
                 {/* Button */}
-                <button className="buy-btn">
-                  <FaShoppingCart />
-                  Buy Now
-                </button>
+               <button className="buy-btn" onClick={() => handleBuy(book)}>
+  <FaShoppingCart />
+  Buy Now
+</button>
 
               </div>
             </div>
