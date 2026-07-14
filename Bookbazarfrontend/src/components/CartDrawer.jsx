@@ -44,11 +44,11 @@ function CartDrawer({ onClose }) {
             /* Empty Cart */
             <div className="cart-empty">
               <div className="empty-icon">🛒</div>
-              <h4>Cart khali hai!</h4>
-              <p>Koi book ya notes add karo</p>
+              <h4>Cart is empty</h4>
+              <p>Add some books to your cart!</p>
               <Link to="/books" onClick={onClose}>
                 <button className="empty-btn">
-                  Books Dekho
+                  Find Books
                   <FaArrowRight />
                 </button>
               </Link>
@@ -105,12 +105,12 @@ function CartDrawer({ onClose }) {
 
             {/* Buttons */}
             <button className="checkout-btn">
-              Checkout Karo
+              Checkout
               <FaArrowRight />
             </button>
 
             <button className="clear-btn" onClick={clearCart}>
-              <FaTrash /> Cart Clear Karo
+              <FaTrash /> Clear Cart
             </button>
 
           </div>

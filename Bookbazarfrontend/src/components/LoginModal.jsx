@@ -47,7 +47,7 @@ function LoginModal({ onClose }) {
       // Register
       const res = await register(formData.name, formData.email, formData.password);
       if (res.success) {
-        setSuccess('Account bana liya! 🎉');
+        setSuccess('Account created successfully! 🎉');
         setTimeout(() => onClose(), 1000);
       } else {
         setError(res.message);
@@ -72,7 +72,7 @@ function LoginModal({ onClose }) {
 
         {/* Title */}
         <h2>{isLogin ? 'Welcome Back! 👋' : 'Join BookBazar! 🎉'}</h2>
-        <p>{isLogin ? 'Login karke books explore karo' : 'Free mein account banao'}</p>
+        <p>{isLogin ? 'Login to explore books' : 'Create a free account'}</p>
 
         {/* Toggle */}
         <div className="modal-toggle">
